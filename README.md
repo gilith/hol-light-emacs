@@ -10,9 +10,9 @@ Clone this repo and add a line like this into your `.emacs` file:
 
 Launch Emacs and start up a HOL Light process in an Emacs shell:
 
-`M-x shell`
-`ocaml`
-`#use "hol.ml";;`
+    M-x shell
+    ocaml
+    #use "hol.ml";;
 
 Load a proof script file and interact with the HOL Light process as follows:
 
