@@ -31,4 +31,4 @@ Notes
 
 These macros were inspired by Michael Norrish's `hol-mode` for interacting with HOL4 in Emacs, and also by Freek Wiedijk's vi mode for HOL Light.
 
-If people find these simple macros to be useful then it would be nice to package them into a full Emacs mode for HOL Light, particularly if it had syntax highlighting and indentation. The macros are released under the MIT license, and pull requests are cheerfully received.
+If people find these simple macros to be useful then it would be nice to package them into an Emacs mode for HOL Light, possibly with syntax highlighting for quoted terms/tacticals/etc and standard indentation rules for tactic proofs. The macros are released under the MIT license, and pull requests are cheerfully received.
