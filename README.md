@@ -1,5 +1,5 @@
-Emacs Lisp Macros for HOL Light Proof
-=====================================
+Emacs Macros for HOL Light Proof
+================================
 
 Instructions
 ------------
