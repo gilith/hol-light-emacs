@@ -6,7 +6,7 @@ Instructions
 
 Clone this repo and add a line like this into your `.emacs` file:
 
-`(load "~/hol-light-emacs/hol-light.el")`
+    (load "~/hol-light-emacs/hol-light.el")
 
 Launch Emacs and start up a HOL Light process in an Emacs shell:
 
