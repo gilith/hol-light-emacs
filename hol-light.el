@@ -22,6 +22,7 @@
 (global-set-key [?\C-c ?\C-l] 'shell-recenter)
 (global-set-key [?\C-c ?\C-r] 'shell-send-region)
 (global-set-key [?\C-c ?\C-c] 'shell-send-paragraph)
+(global-set-key [?\C-c ?\C-w] 'shell-send-word)
 (global-set-key [?\C-c ?\C-g] 'shell-set-goal)
 (global-set-key [?\C-c ?\C-e] 'shell-expand-tactic)
 (global-set-key [?\C-c ?\C-b] 'shell-undo-tactic)
@@ -72,6 +73,13 @@
     (let ((end (point)))
       (backward-paragraph)
       (string-trim (buffer-substring (point) end)))))
+
+(defun get-word ()
+  (save-excursion
+    (skip-chars-backward "[:alnum:]_")
+    (let ((start (point)))
+      (skip-chars-forward "[:alnum:]_")
+      (string-trim (buffer-substring start (point))))))
 
 (defun shell-recenter-raw ()
   (let (proc pbuf pwin)
@@ -193,6 +201,10 @@
 (defun shell-send-paragraph ()
   (interactive ())
   (shell-send-string-raw (concat (get-paragraph) "\n")))
+
+(defun shell-send-word ()
+  (interactive ())
+  (shell-send-string-raw (concat (get-word) ";;\n")))
 
 (defun shell-set-goal ()
   (interactive ())

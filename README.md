@@ -18,6 +18,7 @@ Load a proof script file and interact with the HOL Light process as follows:
 
  * Type `C-c C-l` to recentre the shell window so the OCaml prompt appears right at the bottom.
  * Type `C-c C-c` to evaluate the paragraph containing the cursor in the HOL Light process.
+ * Type `C-c C-w` to evaluate the word containing the cursor in the HOL Light process.
  * Type `C-c C-r` to evaluate the highlighted region in the HOL Light process.
  * Highlight lines of the proof script containing a goal term and type `C-c C-g` to set it as the goal in HOL Light.
  * Highlight lines of the proof script containing one or more tactics and type `C-c C-e` to apply the tactics to the current subgoal.
